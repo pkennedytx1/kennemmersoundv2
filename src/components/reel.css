@@ -1,0 +1,15 @@
+.muted-button {
+    color: rgba(255, 255, 255, 0.63);
+    border: none;
+}
+
+.reel-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.reel-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

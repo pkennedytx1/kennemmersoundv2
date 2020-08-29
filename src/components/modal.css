@@ -1,0 +1,22 @@
+.project-modal-container {
+    text-align: left;
+}
+
+.project-modal-image {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
+.project-modal-links {
+    border-radius: 0;
+    margin: 0 auto;
+}
+
+.project-modal-footer {
+    display: flex;
+    justify-content: space-between;
+}

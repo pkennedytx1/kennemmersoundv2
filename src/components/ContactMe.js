@@ -1,0 +1,52 @@
+import React from 'react';
+import { Form, Button } from 'react-bootstrap';
+import FadeIn from 'react-fade-in';
+import './contact.css';
+
+export default function ContactMe() {
+    return(
+        <FadeIn>
+            <div id="contact" class="content">
+                <div class="contact">
+                    <br/>
+                    <img alt='jk logo' src="J! Logo.png" width="70" heigh="70" />
+                    <h1 id="contact-logo">Joseph Kennemer</h1>
+                </div>
+            </div> 
+            <div className='social-media'>
+                <a className='social-media-button'><i class="fab fa-linkedin"></i></a>
+                <a className='social-media-button'><i class="fab fa-twitter-square"></i></a>
+                <a className='social-media-button'><i class="fab fa-instagram"></i></a>
+            </div>
+            <br /><br />
+            <Form id='contact-form'
+                action="https://formspree.io/josephkennemer@gmail.com"
+                method="POST"
+            >
+                <Form.Group controlId="formBasicEmail">
+                    <Form.Label>Hello there! Leave your email</Form.Label>
+                    <Form.Control className='contact-form-input' type="text" name="_replyto"/>
+                </Form.Group>
+                <Form.Group controlId="formBasicName">
+                    <Form.Label>and your name</Form.Label>
+                    <Form.Control className='contact-form-input' type="text" name="_replytoname"/>
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label>along with your message</Form.Label>
+                    <Form.Control className='contact-form-textarea' as="textarea" name="message"></Form.Control >
+                </Form.Group>
+                <Form.Label>and you'll be hearing from me soon!</Form.Label>
+                <Button block className='contact-form-submit-button' variant='outline-success' type="submit">Send Your Message to Joe</Button>
+            </Form>
+            <br /><br /><br />
+            <h1 id="conbuts"><i class="fas fa-phone"></i> 214-773-7945</h1>
+            <a id="mailto" href="mailto:josephkennemer@gmail.com"><h1 id="conbuts"><i class="far fa-envelope"></i> josephkennemer@gmail.com</h1></a>
+            <br /><br /><br />
+            <footer class="footer">
+                <p id="landingquote">"Sound can create a world of things that don't exist." 
+                <br/>-Ben Burtt<br/></p>
+                <p>Labradane Development &copy</p>
+            </footer>
+        </FadeIn>
+    )
+}

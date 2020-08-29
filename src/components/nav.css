@@ -1,0 +1,19 @@
+.logo {
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    border: none;
+    color: white;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+@media only screen and (max-width : 992px) {
+    .nav-link::after {
+        background-color: transparent;
+    }
+}
