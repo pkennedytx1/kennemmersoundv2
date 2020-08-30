@@ -20,7 +20,7 @@ class Projects extends React.Component {
 
     componentDidMount() {
         let projects = []
-        firebase.database().ref('projects/').on('child_added', (data) => {
+        firebase.database().ref('projects/').orderByChild('orderBy').on('child_added', (data) => {
             projects.push(data.val())
             this.setState({
                 projects

@@ -1,6 +1,7 @@
 import React from 'react';
 import Routes from './routes';
 import "animate.css/animate.min.css";
+import { ToastContainer } from 'react-toastify';
 import { firebaseConfig } from './firebaseConfig';
 import firebase from 'firebase';
 
@@ -9,7 +10,10 @@ firebase.analytics();
 
 function App() {
   return (
-    <Routes />
+    <>
+      <ToastContainer />
+      <Routes />
+    </>
   );
 }
 

@@ -1,9 +1,10 @@
 import React from 'react'
 import firebase from 'firebase'
-import { withRouter, Link } from 'react-router-dom';
-import { Button, Form, Tabs, Tab } from 'react-bootstrap';
-import UpdateProjects from './UpdateProjects';
-import EditProjects from './EditProjects';
+import { withRouter, Link } from 'react-router-dom'
+import { Button, Form, Tabs, Tab } from 'react-bootstrap'
+import UpdateProjects from './UpdateProjects'
+import EditProjects from './EditProjects'
+import { SortProjects } from './SortProjects'
 import FadeIn from 'react-fade-in'
 import Projects from '../containers/Projects'
 import './admin.css'
@@ -65,6 +66,9 @@ class Admin extends React.Component {
                             </Tab>
                             <Tab eventKey="editproject" title="Edit/Delete Project">
                                 <EditProjects userId={this.state.user.id} />
+                            </Tab>
+                            <Tab eventKey="orderproject" title="Order Projects">
+                                <SortProjects userId={this.state.user.id} />
                             </Tab>
                         </Tabs>
                     </>

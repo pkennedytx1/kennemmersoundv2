@@ -1,8 +1,7 @@
 import React from 'react';
 import { Form, Button, Row, Col, Spinner, Alert, Popover, OverlayTrigger } from 'react-bootstrap';
 import firebase from 'firebase'
-import { ToastContainer, toast } from 'react-toastify';
-import ProjectCard from './ProjectCard'
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 class EditProjects extends React.Component {
@@ -249,7 +248,6 @@ class EditProjects extends React.Component {
         )
         return (
             <>
-                <ToastContainer />
                 {this.state.error ?
                 <Alert style={{maxWidth: '600px', margin: '0 auto'}} variant='danger'>
                     Please make sure to fill out all fields other than the <b>optional links field</b>.
