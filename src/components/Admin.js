@@ -18,7 +18,6 @@ class Admin extends React.Component {
     };
 
     componentDidMount() {
-        console.log(firebase.auth().currentUser)
         if (firebase.auth().currentUser) {
             this.setState({ user: firebase.auth().currentUser })
         }
@@ -47,6 +46,12 @@ class Admin extends React.Component {
         this.props.history.push('/');
     };
 
+    handleProjectUpdate = (key) => {
+        if (key === "projects") {
+            this.refs.childProject.handleGetData()
+        }
+    }
+
     render() {
         return (
             <>
@@ -57,9 +62,9 @@ class Admin extends React.Component {
                             <h2>Admin Page</h2>
                             <Button style={{ margin: '0', borderRadius: '0' }} variant="danger" onClick={this.logOutUser} children="Log Out" />
                         </div>
-                        <Tabs defaultActiveKey="projects" id="uncontrolled-tab-example">
+                        <Tabs onSelect={this.handleProjectUpdate} defaultActiveKey="projects" id="uncontrolled-tab-example">
                             <Tab eventKey="projects" title="Current Projects Page">
-                                <Projects />
+                                <Projects ref="childProject"/>
                             </Tab>
                             <Tab eventKey="newproject" title="New Project">
                                 <UpdateProjects userId={this.state.user.id} />
@@ -86,7 +91,7 @@ class Admin extends React.Component {
                                     <Form.Control name="password" onChange={this.handleInputChange} type="password" placeholder="Password" />
                                 </Form.Group>
                                 <Button block style={{ margin: '0', borderRadius: '0' }} variant="dark" type="submit">
-                                    Welcome Back Joe 😄
+                                    Welcome Back Joe <span aria-label='happy' role='img'>😄</span>
                                 </Button>
                             </FadeIn>
                         </Form>

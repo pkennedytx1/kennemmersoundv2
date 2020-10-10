@@ -1,3 +1,11 @@
+.mobile-landingpage {
+  display: none;
+}
+
+.web-tablet-landingpage {
+  display: initial;
+}
+
 .fadeOut{
     opacity:0;
     width:0;
@@ -10,7 +18,7 @@
 }
 
 .subtext-part-one {
-    width: 100%;
+  width: 100%;
   height: 100%;
   position: absolute;
   top: -45px;
@@ -51,6 +59,14 @@
 }
 
 @media only screen and (max-width : 600px) {
+  .mobile-landingpage {
+    display: initial;
+  }
+
+  .web-tablet-landingpage {
+    display: none;
+  }
+
   .logobox {
     margin-top: 10px;
   }

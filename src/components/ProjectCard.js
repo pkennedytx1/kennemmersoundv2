@@ -23,7 +23,7 @@ class ProjectCard extends React.Component {
         return(
             <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
                 <div style={!this.props.areImagesLoaded ? {} : {display: 'none'}} className='project-card-container'>
-                    <Image onLoad={this.handleImageLoad} className='project-card-image' src={this.props.projectImg} />
+                    <Image onLoad={this.handleImageLoad.bind(this)} className='project-card-image' src={this.props.projectImg} />
                     <div className='project-card-overlay-container'>
                         <h2 className='card-title'>{this.props.projectTitle}</h2>
                         <button onClick={this.handleShow} className='card-detail-button'><span>Project Details</span></button>

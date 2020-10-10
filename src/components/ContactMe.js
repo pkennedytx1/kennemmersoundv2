@@ -6,17 +6,17 @@ import './contact.css';
 export default function ContactMe() {
     return(
         <FadeIn>
-            <div id="contact" class="content">
-                <div class="contact">
+            <div id="contact" className="content">
+                <div className="contact">
                     <br/>
                     <img alt='jk logo' src="J! Logo.png" width="70" heigh="70" />
                     <h1 id="contact-logo">Joseph Kennemer</h1>
                 </div>
             </div> 
             <div className='social-media'>
-                <a className='social-media-button'><i class="fab fa-linkedin"></i></a>
-                <a className='social-media-button'><i class="fab fa-twitter-square"></i></a>
-                <a className='social-media-button'><i class="fab fa-instagram"></i></a>
+                <a rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/in/josephkennemer/' className='social-media-button'><i className="fab fa-linkedin"></i></a>
+                <a rel="noopener noreferrer" target='_blank' href='https://twitter.com/joseph_kennemer' className='social-media-button'><i className="fab fa-twitter-square"></i></a>
+                <a rel="noopener noreferrer" target='_blank' href='https://www.instagram.com/joseph.kennemer/?hl=en'className='social-media-button'><i className="fab fa-instagram"></i></a>
             </div>
             <br /><br />
             <Form id='contact-form'
@@ -39,14 +39,9 @@ export default function ContactMe() {
                 <Button block className='contact-form-submit-button' variant='outline-success' type="submit">Send Your Message to Joe</Button>
             </Form>
             <br /><br /><br />
-            <h1 id="conbuts"><i class="fas fa-phone"></i> 214-773-7945</h1>
-            <a id="mailto" href="mailto:josephkennemer@gmail.com"><h1 id="conbuts"><i class="far fa-envelope"></i> josephkennemer@gmail.com</h1></a>
+            <h1 id="conbuts"><i className="fas fa-phone"></i> 214-773-7945</h1>
+            <a id="mailto" href="mailto:josephkennemer@gmail.com"><h1 id="conbuts"><i className="far fa-envelope"></i> josephkennemer@gmail.com</h1></a>
             <br /><br /><br />
-            <footer class="footer">
-                <p id="landingquote">"Sound can create a world of things that don't exist." 
-                <br/>-Ben Burtt<br/></p>
-                <p>Labradane Development &copy</p>
-            </footer>
         </FadeIn>
     )
 }

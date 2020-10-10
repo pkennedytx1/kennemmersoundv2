@@ -19,6 +19,10 @@ class Projects extends React.Component {
     }
 
     componentDidMount() {
+        this.handleGetData()
+    }
+
+    handleGetData = () => {
         let projects = []
         firebase.database().ref('projects/').orderByChild('orderBy').on('child_added', (data) => {
             projects.push(data.val())
@@ -47,13 +51,17 @@ class Projects extends React.Component {
           };
         return(
             <div style={{maxWidth: '1200px', margin: '0 auto'}}>
-                <FadeIn>
+                <FadeIn className='page-wrap'>
                     <h1 id='proj'>Projects</h1>
-                    {this.state.isLoading && this.state.isLoadingImages ?
+                    {this.state.isLoading || this.state.isLoadingImages ?
                     <>
                         <Spinner animation="border" variant="light" />
                     </>
-                    :
+                    : null
+                    }
+                    <div 
+                        style={{display: this.state.isLoadingImages ? 'hidden' : 'initial'}}
+                    >
                     <Masonry
                         breakpointCols={breakpointColumnsObj}
                         className="my-masonry-grid"
@@ -75,7 +83,7 @@ class Projects extends React.Component {
                                 />)
                         })}
                     </Masonry>
-                    }
+                    </div>
                 </FadeIn>
             </div>
         )

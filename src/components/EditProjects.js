@@ -167,7 +167,6 @@ class EditProjects extends React.Component {
                 this.setState({
                     currentProjects: projects
                 })
-                console.log(this.state.currentProjects)
             })
         })
     }
@@ -203,7 +202,6 @@ class EditProjects extends React.Component {
                 this.setState({
                     currentProjects: projects
                 })
-                console.log(this.state.currentProjects)
             })
         })
     }
@@ -272,7 +270,7 @@ class EditProjects extends React.Component {
                             <h5 style={{ margin: '0 auto' }}>Current Image</h5>
                         </Row>
                         <Row>
-                            <img style={{maxWidth: '400px', margin: '20px auto'}} src={this.state.projectImgURL} />
+                            <img alt='project' style={{maxWidth: '400px', margin: '20px auto'}} src={this.state.projectImgURL} />
                         </Row>
                         <Row>
                             <Form.Group as={Col}>
@@ -309,6 +307,7 @@ class EditProjects extends React.Component {
                                     <option value='Film'>Podcast</option>
                                     <option value='Tv Series'>TV Series</option>
                                     <option value='Internet Video'>Internet Video</option>
+                                    <option value='Music Video'>Music Video</option>
                                 </Form.Control>
                             </Form.Group>
                             <Form.Group as={Col}>

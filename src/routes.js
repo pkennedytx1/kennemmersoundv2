@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Navagation from './components/Navagation';
 import LandingPage from './components/landingpage'
 import AboutMe from './components/AboutMe';
@@ -11,7 +11,7 @@ import Projects from './containers/Projects';
 
 export default function Routes() {
     return(
-        <Router>
+        <>
             <Navagation />
             <Route exact path='/'>
                 <LandingPage />
@@ -34,7 +34,7 @@ export default function Routes() {
             <Route exact path='/admin'>
                 <Admin />
             </Route>
-        </Router>
+        </>
     )
 }
 

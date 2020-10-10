@@ -10,6 +10,7 @@
     "animate.css": "^4.1.0",
     "bootstrap": "^4.5.0",
     "cors": "^2.8.5",
+    "create-react-class": "^15.6.3",
     "firebase": "^7.15.5",
     "react": "^16.13.1",
     "react-animate-on-scroll": "^2.1.5",

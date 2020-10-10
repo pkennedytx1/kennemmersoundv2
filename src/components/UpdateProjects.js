@@ -164,6 +164,7 @@ class UpdateProjects extends React.Component {
                                 <option value='Film'>Podcast</option>
                                 <option value='Tv Series'>TV Series</option>
                                 <option value='Internet Video'>Internet Video</option>
+                                <option value='Music Video'>Music Video</option>
                             </Form.Control>
                         </Form.Group>
                         <Form.Group as={Col}>

@@ -1,11 +1,6 @@
 /*Sticky Footer Code*/
-html, body {
-  height: 100%; 
-}
 
 body {
-  display: flex;
-  flex-direction: column;
   background-color: black;
   text-align: center;
 }
@@ -14,8 +9,25 @@ body {
   flex: 1 0 auto;
 }
 
-.footer {
+.page-wrap {
+  min-height: 90vh;
+  /* equal to footer height */
+  margin-bottom: -80px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 80px; 
+}
+.site-footer {
   flex-shrink: 0;
+  background: black;
+}
+
+.footer {
+  /* flex-shrink: 0; */
   padding: 10px;
   margin-top: 10px;
   background-color: black;
@@ -26,6 +38,16 @@ body {
 #landingquote {
   color: rgba(255, 255, 255, 0.212);
   transition: 0.4s ease;
+}
+
+#reelquote {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.212);
+  transition: 0.4s ease;
+}
+
+#reelquote:hover {
+  color: rgba(255, 255, 255, 0.733);
 }
 
 #landingquote:hover {
@@ -312,7 +334,8 @@ body {
   font-size: 75px;
   font-family: 'Abril Fatface', cursive;
   color: white;
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 
