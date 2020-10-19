@@ -1,0 +1,15 @@
+.invoice-input {
+    border-color: white;
+    background-color: black;
+}
+
+.invoice-input:focus {
+    color: white;
+    background-color: black;
+}
+
+.invoice-button {
+    margin: 0;
+    border-radius: 0px;
+    
+}

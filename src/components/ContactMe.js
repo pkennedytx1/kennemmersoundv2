@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
+import SimpleMap from './GoogleMap'
 import FadeIn from 'react-fade-in';
 import './contact.css';
 
@@ -22,6 +23,7 @@ export default function ContactMe() {
             <Form id='contact-form'
                 action="https://formspree.io/josephkennemer@gmail.com"
                 method="POST"
+                style={{paddingRight: '5px', paddingLeft: '5px'}}
             >
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Hello there! Leave your email</Form.Label>
@@ -42,6 +44,10 @@ export default function ContactMe() {
             <h1 id="conbuts"><i className="fas fa-phone"></i> 214-773-7945</h1>
             <a id="mailto" href="mailto:josephkennemer@gmail.com"><h1 id="conbuts"><i className="far fa-envelope"></i> josephkennemer@gmail.com</h1></a>
             <br /><br /><br />
+            <h5>Save My Contact Information</h5>
+            <img alt='qr code' src='kennemerqr.png' />
+            <br /><br /><br />
+            <SimpleMap />
         </FadeIn>
     )
 }

@@ -16,11 +16,11 @@ export default function Navagation() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">
-                <Nav.Link as={NavLink} to='/reel'><i className="far fa-play-circle"></i> Reel</Nav.Link>
-                <Nav.Link as={NavLink} to='/projects'><i className="fas fa-film"></i> Projects</Nav.Link>
-                <Nav.Link as={NavLink} to='/about'><i className="fas fa-user-alt"></i> About Me</Nav.Link>
-                <Nav.Link as={NavLink} to='/contact'><i className="fas fa-comment"></i> Contact</Nav.Link>
-                <Nav.Link as={NavLink} to='/testimonials'><i className="fas fa-star"></i> Testimonials</Nav.Link>
+                <Nav.Link as={NavLink} eventKey={window.innerWidth < 990 ? 1 : null} to='/reel'><i className="far fa-play-circle"></i> Reel</Nav.Link>
+                <Nav.Link as={NavLink} eventKey={window.innerWidth < 990 ? 2 : null} to='/projects'><i className="fas fa-film"></i> Projects</Nav.Link>
+                <Nav.Link as={NavLink} eventKey={window.innerWidth < 990 ? 3 : null} to='/about'><i className="fas fa-user-alt"></i> About Me</Nav.Link>
+                <Nav.Link as={NavLink} eventKey={window.innerWidth < 990 ? 4 : null} to='/contact'><i className="fas fa-comment"></i> Contact</Nav.Link>
+                <Nav.Link as={NavLink} eventKey={window.innerWidth < 990 ? 5 : null} to='/testimonials'><i className="fas fa-star"></i> Testimonials</Nav.Link>
             </Nav>
         </Navbar.Collapse>
         </Navbar>

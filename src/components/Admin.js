@@ -5,6 +5,7 @@ import { Button, Form, Tabs, Tab } from 'react-bootstrap'
 import UpdateProjects from './UpdateProjects'
 import EditProjects from './EditProjects'
 import { SortProjects } from './SortProjects'
+import Invoice from './Invoice'
 import FadeIn from 'react-fade-in'
 import Projects from '../containers/Projects'
 import './admin.css'
@@ -74,6 +75,9 @@ class Admin extends React.Component {
                             </Tab>
                             <Tab eventKey="orderproject" title="Order Projects">
                                 <SortProjects userId={this.state.user.id} />
+                            </Tab>
+                            <Tab eventKey="invoices" title="Create an Invoice">
+                                <Invoice user={this.state.user} />
                             </Tab>
                         </Tabs>
                     </>
