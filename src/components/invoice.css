@@ -1,11 +1,22 @@
 .invoice-input {
-    border-color: white;
+    border-color: rgb(141, 141, 141);
     background-color: black;
+    border-radius: 0px;
 }
 
 .invoice-input:focus {
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: black;
+}
+
+.invoice-line-item {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.supporting-invoice-title {
+    color: rgb(128, 128, 128);
 }
 
 .invoice-button {

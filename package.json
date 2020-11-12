@@ -25,6 +25,7 @@
     "react-masonry-css": "^1.0.14",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-text-rotator": "^0.1.1",
     "react-toastify": "^6.0.8",
     "react-typing-effect": "^2.0.3"
   },

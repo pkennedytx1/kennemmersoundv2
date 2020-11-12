@@ -19,7 +19,7 @@ const Footer = createReactClass({
                         <p id="reelquote">"Sound can create a world of things that don't exist." <br/>-Ben Burtt<br/></p>
                     </Route>
                     <Route exact path='/reel'>
-                        <p id="reelquote">“The role of sound is really exactly what the role of every other aspect of filmmaking is, and that is to tell stories.”<br/>-Mark Mangini<br/></p>
+                        <p id="reelquote">“Sound is still the best way to experience emotion.”<br/>-Gary Rydstrom<br/></p>
                     </Route>
                     <Route exact path='/projects'>
                         <p id="landingquote">“Sound is half of the experience”<br />-George Lucas<br /></p>

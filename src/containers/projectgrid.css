@@ -15,3 +15,60 @@
     background: grey;
     margin-bottom: 10px;
   }
+
+  .filter-projects-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 10;
+  }
+
+  #dropdown-variants-primary {
+    background-color: black;
+    border-radius: 0px;
+    width: 100%;
+    margin-left: 15px;
+    font-size: 28px;
+  }
+
+  #dropdown-variants-primary:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  #dropdown-variants-primary:hover {
+    border-color: rgb(0, 255, 128);
+  }
+
+  .dropdown-menu {
+    border-radius: 0px;
+    font-size: 20px;
+  }
+
+  .dropdown-item:hover {
+    background-color: rgb(0, 255, 157);
+    color: black;
+  }
+
+  .dropdown .active {
+    background-color: rgb(0, 255, 157);
+    color: black;
+  }
+
+  @media only screen and (max-width: 818px) {
+    .filter-text {
+      display: none;
+    }
+
+    #dropdown-variants-primary {
+      margin: 0px;
+      margin-bottom: 20px;
+      width: 100vw;
+    }
+
+    .dropdown-menu {
+      width: 100%;
+      text-align: center;
+    }
+  }

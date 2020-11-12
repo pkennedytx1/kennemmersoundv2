@@ -161,7 +161,7 @@ class UpdateProjects extends React.Component {
                                 <option value='Film'>Film</option>
                                 <option value='Short Film'>Short Film</option>
                                 <option value='Commercial'>Commercial</option>
-                                <option value='Film'>Podcast</option>
+                                <option value='Podcast'>Podcast</option>
                                 <option value='Tv Series'>TV Series</option>
                                 <option value='Internet Video'>Internet Video</option>
                                 <option value='Music Video'>Music Video</option>

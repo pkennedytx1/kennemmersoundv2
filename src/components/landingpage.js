@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ReactTypingEffect from 'react-typing-effect';
 import ScrollAnimation from 'react-animate-on-scroll';
+import Banner from './Banner';
 import './landing.css';
 
 export default function LandingPage() {
@@ -11,6 +12,7 @@ export default function LandingPage() {
     }, 8200)
     return(
         <>
+        <Banner />
         <div className='web-tablet-landingpage'>
             <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
                 <div className="logobox">

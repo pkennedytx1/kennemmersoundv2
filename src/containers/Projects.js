@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectCard from '../components/ProjectCard'
 import Masonry from 'react-masonry-css'
-import { Spinner } from 'react-bootstrap'
+import { Spinner, DropdownButton, Dropdown, ButtonGroup } from 'react-bootstrap'
 import FadeIn from 'react-fade-in'
 import firebase from 'firebase'
 import './projectgrid.css'
@@ -14,7 +14,9 @@ class Projects extends React.Component {
             projects: [],
             isLoading: true,
             isLoadingImages: true,
-            loadingCount: 0
+            loadingCount: 0,
+            filterProjects: [],
+            currentFilter: 'All'
         }
     }
 
@@ -27,7 +29,8 @@ class Projects extends React.Component {
         firebase.database().ref('projects/').orderByChild('orderBy').on('child_added', (data) => {
             projects.push(data.val())
             this.setState({
-                projects
+                projects,
+                filterProjects: projects
             }, () => {this.setState({ isLoading: false })})
         })
     }
@@ -41,6 +44,22 @@ class Projects extends React.Component {
             this.setState({ isLoadingImages: false })
             return false
         }
+    }
+
+    handleProjectFilter = (e) => {
+        e.preventDefault()
+        let type = e.target.getAttribute('value')
+        let projects = this.state.projects
+        if (type === 'All') {
+            this.setState({
+                filterProjects: projects,
+                currentFilter: 'All'
+            })
+        } else {
+            let filterProjects = projects.filter(project => project.projectType === type)
+            this.setState({ filterProjects, currentFilter: type })
+        }
+        console.log(this.state.filterProjects)
     }
 
     render() {
@@ -62,11 +81,29 @@ class Projects extends React.Component {
                     <div 
                         style={{display: this.state.isLoadingImages ? 'hidden' : 'initial'}}
                     >
+                    <div className='filter-projects-container' style={{ display: this.state.isLoadingImages ? 'none' : 'flex'}}>
+                        <h3 className='filter-text'>Hello, you're currently viewing</h3>
+                        <DropdownButton
+                            as={ButtonGroup}
+                            id='dropdown-variants-primary'
+                            variant='secondary'
+                            size='lg'
+                            title={this.state.currentFilter}
+                            >
+                            <Dropdown.Item eventKey='1' active={this.state.currentFilter === 'All' ? true : false} onClick={this.handleProjectFilter} variant='outline-light' value='All'>All</Dropdown.Item>
+                            <Dropdown.Item eventKey='2' active={this.state.currentFilter === 'Film' ? true : false} onClick={this.handleProjectFilter} variant='outline-light' value='Film'>Feature</Dropdown.Item>
+                            <Dropdown.Item eventKey='3' active={this.state.currentFilter === 'Short Film' ? true : false} onClick={this.handleProjectFilter} variant='outline-light' value='Short Film'>Short Film</Dropdown.Item>
+                            <Dropdown.Item eventKey='4' active={this.state.currentFilter === 'Commercial' ? true : false} onClick={this.handleProjectFilter} variant='outline-light' value='Commercial'>Commercial</Dropdown.Item>
+                            <Dropdown.Item eventKey='5' active={this.state.currentFilter === 'Internet Video' ? true : false} onClick={this.handleProjectFilter} variant='outline-light' value='Internet Video'>Internet Video</Dropdown.Item>
+                            <Dropdown.Item eventKey='6' active={this.state.currentFilter === 'Tv Series' ? true : false} onClick={this.handleProjectFilter} variant='outline-light' value='Tv Series'>TV Series</Dropdown.Item>
+                        </DropdownButton>
+                        <h3 className='filter-text'>projects.</h3>
+                    </div>
                     <Masonry
                         breakpointCols={breakpointColumnsObj}
                         className="my-masonry-grid"
                         columnClassName="my-masonry-grid_column">
-                        {this.state.projects.map((project, i) => {
+                        {this.state.filterProjects.map((project, i) => {
                             return(<ProjectCard 
                                 key={i}
                                 projectImg={project.projectImgURL}

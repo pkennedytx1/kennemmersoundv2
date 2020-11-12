@@ -12,4 +12,5 @@ exports.addInvoice = functions.https.onRequest(async (req, res) => {
             return res
         }).catch((error) => console.log(error))
     })
+    return res.json()
 })

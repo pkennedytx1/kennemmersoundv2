@@ -1,0 +1,30 @@
+.banner-text {
+    color: rgba(255, 255, 255, 0.808);
+    font-weight: bold;
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
+}
+
+.banner-text-link {
+    color: rgba(255, 255, 255, 0.849);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.banner-text-link:hover {
+    color: rgba(0, 236, 145, 0.705);
+    text-decoration: none;
+}
+
+.link-rotation-con {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(139, 139, 139, 0.212);
+}
+
+.loop-banner-container {
+    text-align: left;
+    justify-content: left;
+}
