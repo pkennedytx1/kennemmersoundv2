@@ -28,7 +28,7 @@ class ProjectCard extends React.Component {
                         <h2 className='card-title'>{this.props.projectTitle}</h2>
                         <button onClick={this.handleShow} className='card-detail-button'><span>Project Details</span></button>
                     </div>
-                    <ProjectModal 
+                    <ProjectModal
                         show={this.state.showProjectDetailModal}
                         handleClose={this.handleClose}
                         handleShow={this.handleShow}

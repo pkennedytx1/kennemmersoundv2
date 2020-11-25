@@ -38,9 +38,14 @@
 .card-detail-button {
     color: white;
     background-color: transparent;
-    border: transparent 2px solid;
-    border-radius: 16px;
+    border: white 1px solid;
+    padding: 5px 12px;
+    border-radius: 2px;
     transition: 0.2s ease-in-out;
+}
+
+.card-detail-button:hover {
+    border-color: rgb(255, 255, 255)
 }
 
 .card-detail-button span {

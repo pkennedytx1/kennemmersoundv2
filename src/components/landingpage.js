@@ -62,6 +62,7 @@ export default function LandingPage() {
         <br /><br />
         </div>
         <div className='mobile-landingpage'>
+        <br />
         <div className="logobox">
             <img alt='Kennemmer Sound Design Logo'src="J! Logo.png" width="125" heigh="125" />
         </div>
@@ -71,6 +72,7 @@ export default function LandingPage() {
                 <div className='subtext-container'>
                     <div id="str"><p id='after'>Sound is the puppet master of emotion. Let's make your audience feel your story.</p></div>
                 </div>
+                <br />
             </div>
             <div className='social-media'>
                 <a rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/in/josephkennemer/' className='social-media-button'><i className="fab fa-linkedin"></i></a>

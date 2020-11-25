@@ -5,15 +5,23 @@
 .navbar-toggler {
     border: none;
     color: white;
+    padding: 0px;
 }
 
 .navbar-toggler:focus {
     outline: none;
     box-shadow: none;
-  }
+}
+
+.hamburger-react {
+    color: rgba(255, 255, 255, 0.89);
+}
 
 @media only screen and (max-width : 992px) {
     .nav-link::after {
         background-color: transparent;
+    }
+    .nav-link {
+        font-size: 15px;
     }
 }
