@@ -71,7 +71,7 @@ class Projects extends React.Component {
         return(
             <div style={{maxWidth: '1200px', margin: '0 auto'}}>
                 <FadeIn className='page-wrap'>
-                    <h1 id='proj'>Projects</h1>
+                    <h1 style={{marginBottom: '40px'}} id='proj'>Projects</h1>
                     {this.state.isLoading || this.state.isLoadingImages ?
                     <>
                         <Spinner animation="border" variant="light" />

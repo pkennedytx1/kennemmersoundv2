@@ -15,6 +15,9 @@ export default function Routes() {
             <Navagation />
             <Route exact path='/'>
                 <LandingPage />
+                <div style={{display: 'none'}} >
+                    <Projects />
+                </div>
             </Route>
             <Route exact path='/about'>
                 <AboutMe />

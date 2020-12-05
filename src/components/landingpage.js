@@ -12,7 +12,7 @@ export default function LandingPage() {
     }, 8200)
     return(
         <>
-        <Banner />
+        <Banner/>
         <div className='web-tablet-landingpage'>
             <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
                 <div className="logobox">

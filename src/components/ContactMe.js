@@ -10,7 +10,7 @@ export default function ContactMe() {
             <div id="contact" className="content">
                 <div className="contact">
                     <br/>
-                    <img alt='jk logo' src="J! Logo.png" width="70" heigh="70" />
+                    <img alt='jk logo' src="J! Logo.png" width="70" height="70" />
                     <h1 id="contact-logo">Joseph Kennemer</h1>
                 </div>
             </div> 
