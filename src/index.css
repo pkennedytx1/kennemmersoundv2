@@ -156,7 +156,7 @@ body {
   font-size: 60px;
   padding: 10px;
   max-width: 1200px;
-  margin: 100px auto 10px auto;
+  margin: 80px auto 10px auto;
   font-family: sans-serif;
 }
 
@@ -180,7 +180,7 @@ body {
 }
 
 .amcontent {
-  max-width: 960px;
+  max-width: 720px;
   margin: 20px auto 20px auto;
   color:white;
   text-align: center;
@@ -189,10 +189,13 @@ body {
 }
 
 .amtext {
-  text-align: center;
-  margin: 8px 0px 0px 0px;
-  padding: 20px;
+  text-align: justify;
   font-size: 20px;
+}
+
+.aboutme-logo {
+  height: 70px;
+  width: 70px;
 }
 
 #hs {
@@ -219,11 +222,6 @@ body {
   text-align: center;
   color: white;
 }
-
-
-
-
-
 
 /* Landing Page Styling */
 
@@ -335,7 +333,7 @@ body {
   font-family: 'Abril Fatface', cursive;
   color: white;
   margin-top: 20px;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 
@@ -466,7 +464,7 @@ html {
   }
 
   #proj {
-      font-size: 30px;
+      font-size: 55px;
   }
 
   .testamonials {

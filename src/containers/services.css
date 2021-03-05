@@ -1,0 +1,45 @@
+.supporting-service-title {
+    max-width: 600px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.service-logo {
+    margin-right: 10px;
+}
+
+.service-support-text {
+    margin-top: 3px;
+}
+
+.service-card {
+    margin: 200px auto;
+    text-align: left;
+    max-width: 800px;
+}
+
+.service-card-title {
+    text-align: center;
+    margin: 20px;
+}
+
+.service-desc {
+    margin: 20px;
+}
+
+.service-name {
+    border-bottom: 2px rgb(0, 255, 136) solid;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 644px) {
+    .supporting-service-title {
+        display: block;
+    }
+
+    .service-support-text {
+        margin-top: 10px;
+    }
+}

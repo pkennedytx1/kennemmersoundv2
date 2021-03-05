@@ -61,6 +61,10 @@
       display: none;
     }
 
+    #prog {
+      font-size: 55px;
+    }
+
     #dropdown-variants-primary {
       margin: 0px;
       margin-bottom: 20px;

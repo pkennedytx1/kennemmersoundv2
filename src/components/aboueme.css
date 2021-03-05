@@ -1,0 +1,40 @@
+.am-contact-button {
+    border-radius: 0px;
+    border: white 2px solid;
+    color: white;
+    margin: 0px;
+    transition: 0.3s ease;
+    width: 250px;
+}
+
+.am-contact-button:hover {
+    border-color: rgba(0, 255, 136, 0.87);
+    background-color: black;
+    color: rgba(0, 255, 136, 0.87);
+}
+
+.aboutme-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutme-support-text {
+    font-size: 26px;
+    margin: 10px;
+    text-align: left;
+}
+
+.amtext {
+    margin: 10px;
+}
+
+  @media only screen and (max-width : 600px) {
+      .aboutme-header {
+          display: inline;
+          text-align: center;
+      }
+      .aboutme-support-text {
+          text-align: center;
+      }
+  }

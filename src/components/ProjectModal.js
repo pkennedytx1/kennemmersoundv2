@@ -22,7 +22,7 @@ export default function ProjectModal(props) {
                 <Modal.Footer className='project-modal-footer'>
                 {props.links && props.links.length > 0 ? props.links.map((link, i) => {
                     return(
-                            <Button className='project-modal-links' variant='dark' target='_blank' href={link.link}>{link.type === 'content' ? <i className="fab fa-youtube"></i> : <i className="fas fa-users"></i>} {link.name}</Button>
+                            <Button key={i} className='project-modal-links' variant='dark' target='_blank' href={link.link}>{link.type === 'content' ? <i className="fab fa-youtube"></i> : <i className="fas fa-users"></i>} {link.name}</Button>
                             )
                         }) : null }
                 </Modal.Footer>

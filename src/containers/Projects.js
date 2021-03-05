@@ -71,7 +71,7 @@ class Projects extends React.Component {
         return(
             <div style={{maxWidth: '1200px', margin: '0 auto'}}>
                 <FadeIn className='page-wrap'>
-                    <h1 id='proj'>Projects</h1>
+                    <h1 style={{marginBottom: '40px'}} id='proj'>Projects</h1>
                     {this.state.isLoading || this.state.isLoadingImages ?
                     <>
                         <Spinner animation="border" variant="light" />
@@ -88,7 +88,7 @@ class Projects extends React.Component {
                             id='dropdown-variants-primary'
                             variant='secondary'
                             size='lg'
-                            title={this.state.currentFilter}
+                            title={this.state.currentFilter === 'Film' ? 'Feature' : this.state.currentFilter}
                             >
                             <Dropdown.Item eventKey='1' active={this.state.currentFilter === 'All' ? true : false} onClick={this.handleProjectFilter} variant='outline-light' value='All'>All</Dropdown.Item>
                             <Dropdown.Item eventKey='2' active={this.state.currentFilter === 'Film' ? true : false} onClick={this.handleProjectFilter} variant='outline-light' value='Film'>Feature</Dropdown.Item>
