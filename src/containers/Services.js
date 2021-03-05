@@ -2,20 +2,40 @@ import React from 'react';
 import FadeIn from 'react-fade-in';
 import ServiceCard from '../components/ServiceCard';
 import Services from '../data/services.json';
+import { Tooltip, OverlayTrigger } from 'react-bootstrap';
 import './services.css';
 
 export class ServicesPage extends React.Component {
     render() {
-        console.log(Services);
+        const renderTooltip = (serviceName) => (
+            <Tooltip id="button-tooltip">
+                <h5>
+                  {serviceName}
+                </h5>
+            </Tooltip>
+          );
         return(
             <div className='service-page-container'>
                 <FadeIn>
-                <div className='serive-page-title'>
+                <div className='service-page-title'>
                     <h1 id="proj">Services</h1><br/>
-                    <div className='supporting-service-title'>
-                        <img className='service-logo' alt='jk logo' src="J! Logo.png" width="85" heigh="70" />
-                        <h3 className='service-support-text'>My passion is great sound, whatever your need, let's make it sound great!</h3>
-                    </div>
+                    <img className='service-logo' alt='jk logo' src="J! Logo.png" width="70" heigh="70" /><br /><br />
+                    <h4 className='service-support-text'>Audio post-production is a world unto itself composed of many different crafts and disciplines. Here’s a brief rundown of all the things projects can need from me.</h4>
+                </div>
+                <div className='services-overview'>
+                    {Services.map((service, i) => {
+                        return(
+                            <OverlayTrigger
+                                placement="bottom"
+                                delay={{ show: 250, hide: 400 }}
+                                overlay={renderTooltip(service.serviceName)}
+                            >   
+                                <a href={`#${service.serviceName}`}>
+                                    <i id='service-top-icons' className={service.svgIcon}></i>
+                                </a>
+                            </OverlayTrigger>
+                        )
+                    })}
                 </div>
                 {Services.map((service, i) => {
                     return(

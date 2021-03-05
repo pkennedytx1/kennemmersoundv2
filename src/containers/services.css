@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .supporting-service-title {
     max-width: 600px;
     display: flex;
@@ -12,8 +16,15 @@
     margin-top: 3px;
 }
 
+.service-page-title {
+    max-width: 600px;
+    margin: 20px auto;
+    font-weight: bold;
+}
+
 .service-card {
-    margin: 200px auto;
+    margin: 0 auto;
+    padding: 200px 0;
     text-align: left;
     max-width: 800px;
 }
@@ -21,6 +32,24 @@
 .service-card-title {
     text-align: center;
     margin: 20px;
+}
+
+.services-overview {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#service-top-icons {
+    color:white;
+    font-size: 65px;
+    transition: 0.3s ease;
+}
+
+#service-top-icons:hover {
+    color: rgb(0, 255, 136);
+    cursor: pointer;
 }
 
 .service-desc {
@@ -31,7 +60,7 @@
     border-bottom: 2px rgb(0, 255, 136) solid;
     width: fit-content;
     margin: 0 auto;
-    padding: 10px;
+    padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 644px) {
@@ -41,5 +70,9 @@
 
     .service-support-text {
         margin-top: 10px;
+    }
+
+    .services-overview {
+        display: none;
     }
 }

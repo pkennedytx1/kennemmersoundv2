@@ -11,6 +11,22 @@ html, body, .root {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
+}
+
+.site-button {
+    position: fixed;
+    top: 100vh;
+    right: 0vh;
+    z-index: 10;
+    color: rgba(255, 255, 255, 0.411);
+    transition: 0.3s ease;
+    padding: 10px;
+}
+
+.site-button:hover {
+    color: rgb(0, 255, 136);
+    background-color: rgb(43, 43, 43);
 }
 
 .site-content {

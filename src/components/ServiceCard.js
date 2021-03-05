@@ -5,11 +5,11 @@ export default class ServiceCard extends React.Component {
     render() {
         console.log(this.props.service.serviceName)
         return(
-            <div className='service-card'>
-                <ScrollAnimation delay={200} animateIn="fadeIn">
+            <div id={this.props.service.serviceName} className='service-card'>
+                <ScrollAnimation animateOnce={true} delay={100} animateIn="fadeIn">
                     <div className='service-card-title'>
                         <h1>
-                            <ScrollAnimation initiallyVisible={false} delay="400" animateIn="bounceIn">
+                            <ScrollAnimation animateOnce={true} initiallyVisible={false} delay="400" animateIn="bounceIn">
                                 <i id='service-page-icons ' style={{'color': 'rgb(0, 255, 136)', 'fontSize': '65px'}} className={this.props.service.svgIcon}></i>
                             </ScrollAnimation>
                         </h1>
