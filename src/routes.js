@@ -8,6 +8,7 @@ import ContactMe from './components/ContactMe';
 import Reel from './components/Reel'
 import Admin from './components/Admin'
 import Projects from './containers/Projects';
+import { ServicesPage } from './containers/Services';
 
 export default function Routes() {
     return(
@@ -30,6 +31,9 @@ export default function Routes() {
             </Route>
             <Route exact path='/reel'>
                 <Reel />
+            </Route>
+            <Route exact path='/services'>
+                <ServicesPage />
             </Route>
             <Route exact path='/projects'>
                 <Projects />

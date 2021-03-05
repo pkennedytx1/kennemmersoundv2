@@ -1,0 +1,50 @@
+[
+    {
+        "serviceName": "Dialogue Editing",
+        "svgIcon": "bi bi-headset",
+        "serviceDescription": [
+            "The first step in telling your story with sound is getting sound out of the way of the story.",
+            "You hired a production mixer to capture your talent's performances. Dialogue editing is the process of making their work shine and getting the production sound to a point where it is ready to be mixed. Microphone selection, organization, removing noise, and managing transitions in the production sound are all things we do in this phase."
+        ]
+    },
+    {
+        "serviceName": "Backgrounds Editing",
+        "svgIcon": "bi bi-image-alt",
+        "serviceDescription": [
+            "Your story doesn’t take place in a vacuum, but in a world!",
+            "What do the spaces your characters inhabit sound like? There’s a lot of storytelling power in this question. Backgrounds can tell us when and where a scene takes place, ground the drama in reality, and can change the way a scene feels drastically."
+        ]
+    },
+    {
+        "serviceName": "Foley Recording & Editing",
+        "svgIcon": "bi bi-mic",
+        "serviceDescription": [
+            "Nervous fidgeting or confident footsteps, the soft rustle of a gown or the clanging of a suit of armor, shells being loaded into a shotgun or a pen put to paper. These sound elements of performances have to be recorded and edited into your film and that process is referred to as foley. If we don’t hear these things the drama can feel like it’s at a distance and not right in front of you."
+        ]
+    },
+    {
+        "serviceName": "Hard FX Editing",
+        "svgIcon": "bi bi-speaker",
+        "serviceDescription": [
+            "A Ford GT roaring across the finish line, the rat-a-tat-tat of machine gun fire, the siren on a police cruiser. Hard FX are sound effects that can't be performed, but don’t need to be designed per se. Making these effects feel real and cinematic is crucial."
+        ]
+    },
+    {
+        "serviceName": "Sound Design",
+        "svgIcon": "bi bi-vinyl",
+        "serviceDescription": [
+            "Sound Design can mean two things.",
+            "One, creating sounds for things that don't make noise, that don't exist, or can't be recorded. Like a lightsaber or a Tyrannosaurus Rex.",
+            "Two, and the original intent of the phrase, is exploring how sound can help tell your story by designing the film to use sound. Ideally, we would find these sound-and-story opportunities in pre-production, build them into your approach when shooting and editing the film, and then realize them in post-production.",
+            "If you want to craft a cinematic experience, you will need to sound design it."
+        ]
+    },
+    {
+        "serviceName": "Re-Recording Mixing",
+        "svgIcon": "bi bi-soundwave",
+        "serviceDescription": [
+            "This is where it all comes together and we finalize your film’s soundtrack.",
+            "The dialogue, sound effects, and music in your film need to be woven together to guide the audience's ear through your story. This is often my favorite part of the process and I recommend we do it together."
+        ]
+    }
+]
