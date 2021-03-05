@@ -12,7 +12,7 @@ class Banner extends React.Component {
                 animation: 'fade'
             },
             {
-                text: <span role='img' aria-label='christmantree' >🎄&nbsp;🎉&nbsp;🦃&nbsp;&nbsp;Happy Holidays!</span>,
+                text: <span role='img' aria-label='christmantree' >🍀&nbsp;&nbsp;Happy St. Patty's Day!</span>,
                 className: 'banner-text',
                 animation: 'fade'
             }
