@@ -16,17 +16,23 @@ html, body, .root {
 
 .site-button {
     position: fixed;
-    top: 100vh;
-    right: 0vh;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.815);
+    border-radius: 45px;
+    border: rgba(255, 255, 255, 0.411) 2px solid;
+    right: 0;
     z-index: 10;
     color: rgba(255, 255, 255, 0.411);
     transition: 0.3s ease;
-    padding: 10px;
+    padding: 10px 15px 6px 15px;
+    margin: 15px;
+    cursor: pointer;
 }
 
 .site-button:hover {
     color: rgb(0, 255, 136);
-    background-color: rgb(43, 43, 43);
+    background-color: black;
+    border: rgb(0, 255, 136) 2px solid;
 }
 
 .site-content {
