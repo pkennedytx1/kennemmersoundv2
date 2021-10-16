@@ -16,17 +16,23 @@ html, body, .root {
 
 .site-button {
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     background-color: rgba(0, 0, 0, 0.815);
-    border-radius: 45px;
-    border: rgba(255, 255, 255, 0.411) 2px solid;
+    border: rgba(255, 255, 255, 0) 2px solid;
     right: 0;
     z-index: 10;
     color: rgba(255, 255, 255, 0.411);
     transition: 0.3s ease;
-    padding: 10px 15px 6px 15px;
-    margin: 15px;
     cursor: pointer;
+    padding: 10px;
+    border-radius: 16px;
+    margin: 20px;
+}
+
+.contact-site-text {
+    padding-top: 5px;
+    color: rgb(0, 255, 136);
+    background-color: transparent;
 }
 
 .site-button:hover {

@@ -19,7 +19,6 @@ export class ServicesPage extends React.Component {
                 <FadeIn>
                 <div className='service-page-title'>
                     <h1 id="proj">Services</h1><br/>
-                    <img className='service-logo' alt='jk logo' src="J! Logo.png" width="70" heigh="70" /><br /><br />
                     <h4 className='service-support-text'>Audio post-production is a world unto itself composed of many different crafts and disciplines. Here’s a brief rundown of all the things projects can need from me.</h4>
                 </div>
                 <div className='services-overview'>
@@ -27,7 +26,7 @@ export class ServicesPage extends React.Component {
                         return(
                             <OverlayTrigger
                                 placement="bottom"
-                                delay={{ show: 250, hide: 400 }}
+                                delay={{ show: 0, hide: 0 }}
                                 overlay={renderTooltip(service.serviceName)}
                             >   
                                 <a href={`#${service.serviceName}`}>

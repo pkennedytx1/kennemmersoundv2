@@ -1,7 +1,7 @@
 [
     {
         "serviceName": "Dialogue Editing",
-        "svgIcon": "bi bi-headset",
+        "svgIcon": "bi bi-soundwave",
         "serviceDescription": [
             "The first step in telling your story with sound is getting sound out of the way of the story.",
             "You hired a production mixer to capture your talent's performances. Dialogue editing is the process of making their work shine and getting the production sound to a point where it is ready to be mixed. Microphone selection, organization, removing noise, and managing transitions in the production sound are all things we do in this phase."
@@ -41,7 +41,7 @@
     },
     {
         "serviceName": "Re-Recording Mixing",
-        "svgIcon": "bi bi-soundwave",
+        "svgIcon": "bi bi-sliders",
         "serviceDescription": [
             "This is where it all comes together and we finalize your film’s soundtrack.",
             "The dialogue, sound effects, and music in your film need to be woven together to guide the audience's ear through your story. This is often my favorite part of the process and I recommend we do it together."
