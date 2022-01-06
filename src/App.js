@@ -16,9 +16,8 @@ firebase.initializeApp(firebaseConfig);
 
 const appCheck = firebase.appCheck();
 appCheck.activate(
-  '9WQILJVcQrsBKKXIhaS7',
-  true
-  );
+  '6LeeAdUcAAAAAETTSK8aHxQKIEB1DKZ2SnOrVxmJ',
+  true);
 firebase.analytics();
 
 function App() {
