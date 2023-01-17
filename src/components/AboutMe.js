@@ -11,7 +11,7 @@ export default function AboutMe() {
         <div className="amcontent">
         <FadeIn>
         <h1 id="proj">About Me</h1><br/>
-        <img alt='Joseph Kennemmer' id="hs" src="kennemeraboutme.JPG" className="img-fluid" />
+        <img alt='Joseph Kennemmer' id="hs" src="joe_hot.JPEG" className="img-fluid" />
         <br /><br />
         <div className='aboutme-header'>
             <img className='aboutme-logo' alt='jk logo' src="J! Logo.png" width="70" heigh="70" />

@@ -12,7 +12,6 @@ export default function LandingPage() {
     }, 8200)
     return(
         <>
-        <Banner/>
         <div className='web-tablet-landingpage'>
             <ScrollAnimation animateOnce={true} animateIn='fadeIn'>
                 <div className="logobox">
@@ -22,7 +21,7 @@ export default function LandingPage() {
             <div className="content wrapper">
                 <div className="jumbotron">
                     <ScrollAnimation animateOnce={true} delay={300} animateIn='fadeIn'>
-                        <h1 className="display-4">Sound Design & Re-Recording Mixing</h1>
+                        <h1 className="display-4">Sound Supervision</h1>
                     </ScrollAnimation>
                     <div className='subtext-container'>
                     <ScrollAnimation animateOnce={true} delay={400} animateIn='fadeIn'>
@@ -41,12 +40,6 @@ export default function LandingPage() {
                 </div>
                 <div className='social-media'>
                 <ScrollAnimation animateOnce={true} delay={8700} animateIn='fadeIn'>
-                    <a rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/in/josephkennemer/' className='social-media-button'><i className="fab fa-linkedin"></i></a>
-                </ScrollAnimation>
-                <ScrollAnimation animateOnce={true} delay={8900} animateIn='fadeIn'>
-                    <a rel="noopener noreferrer" target='_blank' href='https://twitter.com/joseph_kennemer' className='social-media-button'><i className="fab fa-twitter-square"></i></a>
-                </ScrollAnimation>
-                <ScrollAnimation animateOnce={true} delay={9000} animateIn='fadeIn'>
                     <a rel="noopener noreferrer" target='_blank' href='https://www.instagram.com/joseph.kennemer/?hl=en'className='social-media-button'><i className="fab fa-instagram"></i></a>
                 </ScrollAnimation>
                 </div>

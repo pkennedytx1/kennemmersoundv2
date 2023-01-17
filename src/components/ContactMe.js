@@ -15,8 +15,6 @@ export default function ContactMe() {
                 </div>
             </div> 
             <div className='social-media'>
-                <a rel="noopener noreferrer" target='_blank' href='https://www.linkedin.com/in/josephkennemer/' className='social-media-button'><i className="fab fa-linkedin"></i></a>
-                <a rel="noopener noreferrer" target='_blank' href='https://twitter.com/joseph_kennemer' className='social-media-button'><i className="fab fa-twitter-square"></i></a>
                 <a rel="noopener noreferrer" target='_blank' href='https://www.instagram.com/joseph.kennemer/?hl=en'className='social-media-button'><i className="fab fa-instagram"></i></a>
             </div>
             <br /><br />
@@ -41,7 +39,6 @@ export default function ContactMe() {
                 <Button block className='contact-form-submit-button' variant='outline-success' type="submit">Send Your Message to Joe</Button>
             </Form>
             <br /><br /><br />
-            <h1 id="conbuts"><i className="fas fa-phone"></i> 214-773-7945</h1>
             <a id="mailto" href="mailto:josephkennemer@gmail.com"><h1 id="conbuts"><i className="far fa-envelope"></i> josephkennemer@gmail.com</h1></a>
             <br /><br /><br />
             <h5>Save My Contact Information</h5>

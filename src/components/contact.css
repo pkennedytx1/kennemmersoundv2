@@ -62,8 +62,6 @@
 }
 
 .social-media {
-    display: flex;
-    justify-content: space-between;
     max-width: 245px;
     font-size: 30px;
     margin: 0 auto;
