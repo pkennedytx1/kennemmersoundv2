@@ -201,7 +201,7 @@ class UpdateProjects extends React.Component {
                                             target='_blank'
                                             href={link.link} s
                                             tyle={{ color: 'white' }}
-                                            key={i}>{(link.type === 'person') ? <i class="fas fa-person-booth"></i> : <i class="fab fa-youtube"></i>} {link.name}
+                                            key={i}>{(link.type === 'person') ? <i className="fas fa-person-booth"></i> : <i className="fab fa-youtube"></i>} {link.name}
                                         </Button>
                                     })}
                                 </>

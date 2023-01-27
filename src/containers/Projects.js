@@ -27,6 +27,7 @@ class Projects extends React.Component {
     handleGetData = () => {
         let projects = []
         firebase.database().ref('projects/').orderByChild('orderBy').on('child_added', (data) => {
+            console.log(data)
             projects.push(data.val())
             this.setState({
                 projects,
